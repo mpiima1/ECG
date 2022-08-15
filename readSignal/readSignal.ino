@@ -1,8 +1,20 @@
+long timee =0;
+int x;
 void setup() {
-Serial.begin(9600);
+  
+  
+  Serial.begin(115200);
+
 }
 
 void loop() {
-Serial.println(analogRead(A0));
-//delay(500);
+  while(!Serial);
+  while (!Serial.available());
+  x = Serial.readString().toInt();
+  timee = millis();
+  while(millis()-timee<10000){
+    Serial.println(analogRead(A0));
+  }
+  Serial.println("end");
+
 }
