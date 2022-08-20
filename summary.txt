@@ -1,0 +1,7 @@
+determine the capacity of a batery
+determine the charge and discharge amount
+determine state of charge
+power consumption depending on mode of usage
+estimate time remaining depending on current usage pattern
+
+usecols=[3,6], names=['colA', 'colB'])
